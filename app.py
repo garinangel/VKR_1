@@ -10,14 +10,16 @@ def index():
 
     message =""
     if request.method == "POST":
-        model = request.form.get("area")
+        model = request.form.get("model")
 
         message = f'Вычисленное значение'
 
     return render_template('html.html', message=message)
 
 
-app.run()
+
+
+
 
 
 
